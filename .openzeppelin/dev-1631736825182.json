@@ -1,0 +1,59 @@
+{
+  "contracts": {
+    "TodoList": {
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "constructorCode": "608060405234801561001057600080fd5b50610404806100206000396000f3fe",
+      "bodyBytecodeHash": "b69c690d90484dd7bd7640f00786947f0dccc562d068aaeb8cf09b59d9623cb7",
+      "localBytecodeHash": "d94dc88df43c5c5e26fc5e7454f66bc526797d2163124051fb1778daec8eec59",
+      "deployedBytecodeHash": "d94dc88df43c5c5e26fc5e7454f66bc526797d2163124051fb1778daec8eec59",
+      "types": {
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_array:dyn<t_string>": {
+          "id": "t_array:dyn<t_string>",
+          "valueType": "t_string",
+          "length": "dyn",
+          "kind": "array",
+          "label": "string[]"
+        }
+      },
+      "storage": [
+        {
+          "contract": "TodoList",
+          "path": "contracts\\TodoList.sol",
+          "label": "list",
+          "astId": 4,
+          "type": "t_array:dyn<t_string>",
+          "src": "52:21:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "upgradable-smart-contracts/TodoList": [
+      {
+        "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+        "version": "1.0.0",
+        "implementation": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+        "admin": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24"
+  }
+}
